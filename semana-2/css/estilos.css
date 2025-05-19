@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.imagen-centrada {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+}
+h1 {
+    text-align: center;
+    color:rgb(0, 0, 0);  /* Color vibrante */
+    font-size: 3em;
+    margin-top: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  /* Sombra sutil */
+}
+h1:hover {
+    color:rgb(255, 218, 51); /* Cambio de color al pasar el cursor */
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f8e1a1,#f8e1a1(247, 223, 255)); /* Degradado suave */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+    font-weight: 300; /* Fuente más ligera */
+    color: #555;
+    padding: 10px 15px;  /* Espaciado interno */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo sutil */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+p:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo más claro al pasar el ratón */
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color:rgb(255, 244, 244);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    background-color:rgb(203, 61, 255);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+    background-color:rgb(255, 238, 48);
+    transform: scale(1.05);
+}
