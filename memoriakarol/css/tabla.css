@@ -1,0 +1,12 @@
+  /*-- Estilo de la tabla --*/
+table {
+    border-collapse: collapse;
+    width: 60%;
+  }
+  th, td {
+    border: 2px solid hsl(0, 75%, 81%);
+    border-radius: 1px;
+    padding: 10px ;
+  }
+
+
