@@ -1,0 +1,166 @@
+
+ .barra-contenedor {
+      width: 100%;
+      background-color: #ff2626;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+
+    .barra-progreso {
+      height: 100%;
+      width: 0%;
+      background-color: #018b18;
+      transition: width 0.3s;
+    }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffeefc;
+    padding: 30px;
+    margin: 0;
+    color: #333;
+  }
+
+  h3 {
+    color: #b13bab;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #a01399;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  input.valido {
+    border-color: #28a745;
+  }
+
+  input.invalido {
+    border-color: #dc3545;
+  }
+
+  .mensaje-error {
+    color: #dc3545;
+    font-size: 13px;
+    display: none;
+    margin-top: 5px;
+  }
+
+  .mensaje-exito {
+    color: #28a745;
+    font-size: 13px;
+    display: none;
+    margin-top: 5px;
+  }
+
+  .barra-contenedor {
+    width: 100%;
+    background-color: #f3b0e2;
+    height: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 25px;
+  }
+
+  .barra-progreso {
+    height: 100%;
+    width: 0%;
+    background-color: #83117d;
+    transition: width 0.4s ease;
+  }
+
+  #porcentajeProgreso {
+    margin-top: 5px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #btnEnviar {
+    background-color: #b12d90;
+    color: white;
+  }
+
+  #btnEnviar:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  button[type="button"] {
+    background-color: #d436f4;
+    color: white;
+    margin-left: 10px;
+  }
+
+  #contadorComentarios {
+    font-size: 12px;
+    text-align: right;
+    color: #666;
+    margin-top: 5px;
+  }
+
+  .password-strength {
+    height: 6px;
+    margin-top: 6px;
+    border-radius: 3px;
+    background-color: #e0e0e0;
+  }
+
+  .strength-weak {
+    background-color: #a50e0e;
+  }
+
+  .strength-medium {
+    background-color: #dad605;
+  }
+
+  .strength-strong {
+    background-color: #3fa80e;
+  }
+
+  .strength-very-strong {
+    background-color: #024600;
+  }
+
+  #resumenDatos {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #f7e9f4;
+    border-left: 6px solid #eebdf0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .dato-resumen {
+    margin-bottom: 10px;
+  }
+
+  .etiqueta-resumen {
+    font-weight: bold;
+  }

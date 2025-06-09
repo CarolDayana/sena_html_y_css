@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sesión de registro</title>
+    <script src="formulario.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+<form id="formularioAvanzado">
+  <label>Nombres completo:
+    <input type="text" id="nombreCompleto" name="nombreCompleto" />
+    <div id="errorNombre" class="mensaje-error"></div>
+    <div id="exitoNombre" class="mensaje-exito"></div>
+  </label>
+  <br>
+ <label>Apellidos completos:
+    <input type="text" id="apellidoCompleto" name="apellidoCompleto" />
+    <div id="errorApellido" class="mensaje-error"></div>
+    <div id="exitoApellido" class="mensaje-exito"></div>
+  </label>
+  <br>
+  <label>Correo electrónico:
+    <input type="email" id="correo" name="correo" />
+    <div id="errorCorreo" class="mensaje-error"></div>
+    <div id="exitoCorreo" class="mensaje-exito"></div>
+  </label>
+
+  <label>Contraseña:
+    <input type="password" id="password" name="password" />
+    <div id="strengthBar" class="password-strength"></div>
+    <div id="errorPassword" class="mensaje-error"></div>
+    <div id="exitoPassword" class="mensaje-exito"></div>
+  </label>
+
+  <label>Confirmar contraseña:
+    <input type="password" id="confirmarPassword" name="confirmarPassword" />
+    <div id="errorConfirmar" class="mensaje-error"></div>
+    <div id="exitoConfirmar" class="mensaje-exito"></div>
+  </label>
+
+  <label>Teléfono:
+    <input type="text" id="telefono" name="telefono" />
+    <div id="errorTelefono" class="mensaje-error"></div>
+    <div id="exitoTelefono" class="mensaje-exito"></div>
+  </label>
+
+  <label>Fecha de nacimiento:
+    <input type="date" id="fechaNacimiento" name="fechaNacimiento" />
+    <div id="errorFecha" class="mensaje-error"></div>
+    <div id="exitoFecha" class="mensaje-exito"></div>
+  </label>
+
+  <label>Comentarios (opcional):
+    <textarea id="comentarios" name="comentarios" maxlength="500"></textarea>
+    <div id="contadorComentarios">0</div>
+  </label>
+
+  <label>
+    <input type="checkbox" id="terminos" name="terminos" />
+    Acepto los términos y condiciones
+    <div id="errorTerminos" class="mensaje-error"></div>
+  </label>
+
+  <!-- Barra de progreso -->
+  <div class="barra-contenedor">
+    <div id="barraProgreso" class="barra-progreso" style="height: 20px; background: green; width: 0%;"></div>
+  </div>
+  <div id="porcentajeProgreso">0%</div>
+
+  <button type="submit" id="btnEnviar" disabled>Enviar</button>
+  <button type="button" onclick="reiniciarFormulario()">Reiniciar</button>
+</form>
+
+<!-- Resumen de datos -->
+<div id="resumenDatos" style="display:none; margin-top:20px;">
+  <h3>Resumen de datos enviados:</h3>
+  <div id="contenidoResumen"></div>
+</div>
+
+  </body>
+</html>
