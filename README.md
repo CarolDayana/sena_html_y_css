@@ -37,7 +37,7 @@ Un glosario de términos fundamentales sobre HTML y CSS, presentado en una inter
 ### 😎 `PRESENTACIÓN`
 Pagina de presentación sobre mi.
 
-🔗 [Ver rama GLOSARIO](https://github.com/CarolDayana/sena_html_y_css/tree/Presentaci%C3%B3n/Presentaci%C3%B3n
+🔗 [Ver rama PRESENTACIÓN](https://github.com/CarolDayana/sena_html_y_css/tree/Presentaci%C3%B3n/Presentaci%C3%B3n
 )
 
 ## 📌 Tecnologías Usadas
