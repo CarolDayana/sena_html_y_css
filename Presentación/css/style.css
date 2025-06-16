@@ -1,0 +1,359 @@
+/* Estilo YouTube Moderno */
+:root {
+  --youtube-red: #FF0000;
+  --youtube-dark: #212121;
+  --youtube-light: #ffffff;
+  --youtube-gray: #606060;
+  --youtube-light-gray: #ffffff;
+  --youtube-text: #030303;
+  --youtube-border: #E5E5E5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--youtube-light);
+  color: var(--youtube-text);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header estilo YouTube */
+.header {
+  background-color: var(--youtube-light);
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--youtube-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_text {
+  color: var(--youtube-red);
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.logo_text::before {
+  content: "▶";
+  color: var(--youtube-red);
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+/* Navegación estilo YouTube */
+.nav_list {
+  display: flex;
+  list-style: none;
+}
+
+.nav_item {
+  margin-left: 24px;
+}
+
+.nav_link {
+  color: var(--youtube-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 0;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.nav_link:hover {
+  color: var(--youtube-red);
+}
+
+.nav_link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--youtube-red);
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav_link:hover::after {
+  width: 100%;
+}
+
+/* Hero Section estilo YouTube */
+.hero {
+  padding: 140px 0 60px;
+  background-color: var(--youtube-light);
+  text-align: center;
+}
+
+.hero_tittle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--youtube-text);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.hero_highlight {
+  color: var(--youtube-red);
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.hero_description {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: var(--youtube-gray);
+}
+
+/* About Section estilo YouTube */
+.about {
+  padding: 80px 0;
+  background-color: var(--youtube-light);
+  border-top: 1px solid var(--youtube-border);
+  border-bottom: 1px solid var(--youtube-border);
+}
+
+.section_tittle {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: var(--youtube-text);
+  font-weight: 700;
+  position: relative;
+}
+
+.section_tittle::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: var(--youtube-red);
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about_content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about_text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about_text p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--youtube-gray);
+}
+
+.about_image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.placeholder_image {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.placeholder_image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.placeholder_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Skills Section estilo YouTube */
+.skills {
+  padding: 80px 0;
+  background-color: var(--youtube-light-gray);
+}
+
+.skill_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.skill_card {
+  background-color: var(--youtube-light);
+  padding: 25px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-top: 3px solid var(--youtube-red);
+}
+
+.skill_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card_tittle {
+  color: var(--youtube-text);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.skill-card_desciption {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: var(--youtube-gray);
+  line-height: 1.7;
+}
+
+/* Footer estilo YouTube */
+.footer {
+  background-color: var(--youtube-dark);
+  color: var(--youtube-light);
+  padding: 60px 0 30px;
+  text-align: center;
+}
+
+.footer_tittle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer_desciption {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+  color: #AAAAAA;
+}
+
+.footer_contact {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.contact-link {
+  color: var(--youtube-light);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  background-color: var(--youtube-gray);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-link:hover {
+  background-color: var(--youtube-red);
+}
+
+.contact-link i {
+  font-size: 1.2rem;
+}
+
+.copyright {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #777777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header_content {
+    flex-direction: column;
+  }
+  
+  .logo_text {
+    margin-bottom: 15px;
+  }
+  
+  .nav_list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav_item {
+    margin: 0 12px 8px;
+  }
+  
+  .hero {
+    padding: 120px 0 50px;
+  }
+  
+  .hero_tittle {
+    font-size: 2rem;
+  }
+  
+  .about_content {
+    flex-direction: column;
+  }
+  
+  .placeholder_image {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo_text {
+    font-size: 1.5rem;
+  }
+  
+  .hero_tittle {
+    font-size: 1.6rem;
+  }
+  
+  .footer_contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-link {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+}
